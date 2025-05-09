@@ -14,13 +14,13 @@ import (
 	"time"
 
 	"github.com/chzyer/readline"
-	"github.com/schollz/cli/v2"
 	"github.com/go-lang-package/croc/v10/src/comm"
 	"github.com/go-lang-package/croc/v10/src/croc"
 	"github.com/go-lang-package/croc/v10/src/mnemonicode"
 	"github.com/go-lang-package/croc/v10/src/models"
 	"github.com/go-lang-package/croc/v10/src/tcp"
 	"github.com/go-lang-package/croc/v10/src/utils"
+	"github.com/schollz/cli/v2"
 	log "github.com/schollz/logger"
 	"github.com/schollz/pake/v3"
 )
@@ -193,6 +193,9 @@ Do you wish to continue to enable the classic mode? (y/N) `)
 		if c.Args().Present() && allStringsAreFiles(c.Args().Slice()) {
 			fnames := []string{}
 			for _, fpath := range c.Args().Slice() {
+				if strings.HasSuffix(fpath, "/") { // by JavaCommons Technologies
+					fpath = strings.TrimSuffix(fpath, "/")
+				}
 				_, basename := filepath.Split(fpath)
 				fnames = append(fnames, "'"+basename+"'")
 			}
