@@ -15,12 +15,12 @@ import (
 
 	"github.com/chzyer/readline"
 	"github.com/schollz/cli/v2"
-	"github.com/schollz/croc/v10/src/comm"
-	"github.com/schollz/croc/v10/src/croc"
-	"github.com/schollz/croc/v10/src/mnemonicode"
-	"github.com/schollz/croc/v10/src/models"
-	"github.com/schollz/croc/v10/src/tcp"
-	"github.com/schollz/croc/v10/src/utils"
+	"github.com/go-lang-package/croc/v10/src/comm"
+	"github.com/go-lang-package/croc/v10/src/croc"
+	"github.com/go-lang-package/croc/v10/src/mnemonicode"
+	"github.com/go-lang-package/croc/v10/src/models"
+	"github.com/go-lang-package/croc/v10/src/tcp"
+	"github.com/go-lang-package/croc/v10/src/utils"
 	log "github.com/schollz/logger"
 	"github.com/schollz/pake/v3"
 )

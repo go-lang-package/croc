@@ -3,9 +3,9 @@ package message
 import (
 	"encoding/json"
 
-	"github.com/schollz/croc/v10/src/comm"
-	"github.com/schollz/croc/v10/src/compress"
-	"github.com/schollz/croc/v10/src/crypt"
+	"github.com/go-lang-package/croc/v10/src/comm"
+	"github.com/go-lang-package/croc/v10/src/compress"
+	"github.com/go-lang-package/croc/v10/src/crypt"
 	log "github.com/schollz/logger"
 )
 

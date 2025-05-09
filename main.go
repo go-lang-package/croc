@@ -10,8 +10,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/schollz/croc/v10/src/cli"
-	"github.com/schollz/croc/v10/src/utils"
+	"github.com/go-lang-package/croc/v10/src/cli"
+	"github.com/go-lang-package/croc/v10/src/utils"
 )
 
 func main() {
