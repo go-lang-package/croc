@@ -1,4 +1,4 @@
-module github.com/schollz/croc/v10
+module github.com/go-lang-package/croc/v10
 
 go 1.24
 
